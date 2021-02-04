@@ -1,0 +1,16 @@
+ipfs add --raw-leaves --cid-version=1 --chunker size-1048576 big.txt
+
+ $ ipfs ls bafybeibdxx7wqehxjcyi6pimqf4id52yq37bhgmzxqslatmgz45cxzhw2e 
+bafkreiesdy3rgsqgsk6mwha2cqw3qsuodr4lupgjxttl6zzlfqxljlspjm 1048576 
+bafkreightqk7kl3gxealbk65v7vmcaekszkyzy35xg2olekr7lecdcw3aq 1048576 
+bafkreiabqu5vk33m32uc6wutmoraiuvzbhrm6eodqlyx775badd2hlrqx4 1048576 
+bafkreigl4w7hfg6xx2j77rgia35vpb54wif5prnfsykj65fahkflqua77u 1048576 
+bafkreicuhzsexsfx7h6fk6t5ilehgecvauhrdyiyj65d73o3al7fzzx6cy 1048576 
+bafkreihfa4g3vsv3fps6uw5zfwyarftujn57i7iop3cw74oxskhysgtsd4 1048576 
+bafkreid6i3vdu7ezfwwq6nutjio7mo7jpq3szk4rjraymorxbxijpmt2za 197210  
+
+workbox: 12D3KooWSGprfc3JgkmHbgVNg3PzMEQPQgi9Rr4msNgJbF2MAsbX
+
+ipfs add --raw-leaves --cid-version=1 --chunker size-1048576 1G
+added bafybeigs7x2jhrq3j5lkgwh6akfuzujlv3hw2b5v6ka5kkm2vtwjlxgvky 1G
+
