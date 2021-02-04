@@ -8,6 +8,17 @@ import ipfshttpclient
 pp = pprint.pprint
 
 
+def get_blocks(cid, depth=0):
+    result = []
+    objects = client.ls(cid)["Objects"]
+    links = objects[0]["Links"]
+    if len(links) == 0:
+        return [objects[0]["Hash"]]
+    for link in links:
+        result.extend(get_blocks(link["Hash"]))
+    return result
+
+
 def ipfs_cat(cid):
     client = ipfshttpclient.connect()
     data = client.cat(cid)
